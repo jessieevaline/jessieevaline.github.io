@@ -3,15 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miriam Oglesby | Author</title>
+    <title>Impressum | Miriam Oglesby</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Mailchimp Form CSS -->
+    <link
+      href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      /* Override Mailchimp default background for seamless styling */
+      #mc_embed_signup {
+        background: #1f2937; /* Tailwind's gray-800 */
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        max-width: 600px;
+        margin: 2rem auto;
+      }
+
+      #mc_embed_signup input,
+      #mc_embed_signup label {
+        color: black !important;
+      }
+    </style>
   </head>
   <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6">
-
-    <section class="text-center py-20">
+    <!-- Page Header -->
+    <section class="text-center py-12">
       <h1 class="text-5xl font-bold">Impressum</h1>
     </section>
 
+    <!-- Work Section -->
     <section class="max-w-4xl py-12 text-center">
       <h2 class="text-3xl font-semibold">My Work</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-6">
@@ -29,6 +55,79 @@
       </div>
     </section>
 
+    <!-- Newsletter Signup (Mailchimp) -->
+    <section id="mc_embed_shell" class="w-full px-4">
+      <div id="mc_embed_signup">
+        <form
+          action="https://gmail.us19.list-manage.com/subscribe/post?u=983f62c91536809930ed4828f&amp;id=e0af9fb66d&amp;f_id=005f95e4f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2 class="text-2xl text-white font-bold mb-4">
+              I want to hear the latest news!
+            </h2>
+            <div class="indicates-required text-sm text-gray-300 mb-2">
+              <span class="asterisk">*</span> indicates required
+            </div>
+            <div class="mc-field-group mb-4">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input
+                type="email"
+                name="EMAIL"
+                class="required email w-full p-2 border rounded"
+                id="mce-EMAIL"
+                required
+              />
+            </div>
+            <div class="mc-field-group mb-4">
+              <label for="mce-FNAME">First Name</label>
+              <input
+                type="text"
+                name="FNAME"
+                class="w-full p-2 border rounded"
+                id="mce-FNAME"
+              />
+            </div>
+            <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none"></div>
+              <div class="response" id="mce-success-response" style="display: none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_983f62c91536809930ed4828f_e0af9fb66d"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="clear foot mt-4">
+              <input
+                type="submit"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+                value="Subscribe"
+              />
+              <p class="text-xs mt-2">
+                <a
+                  href="http://eepurl.com/jcwTCk"
+                  title="Mailchimp - email marketing made easy and fun"
+                  class="text-gray-400 hover:text-white"
+                  >Powered by Mailchimp</a
+                >
+              </p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Connect Section -->
     <section class="py-12 text-center">
       <h2 class="text-3xl font-semibold">Connect With Me</h2>
       <div class="flex justify-center gap-6 mt-4 text-2xl text-gray-400">
@@ -37,5 +136,32 @@
         <a href="#" class="hover:text-white" aria-label="Instagram">📸</a>
       </div>
     </section>
+
+    <!-- Mailchimp JS (validation) -->
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+        fnames[6] = 'COMPANY';
+        ftypes[6] = 'text';
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
   </body>
 </html>
