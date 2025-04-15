@@ -1,55 +1,55 @@
-<html>
-    <head> 
-      <title> Miriam Oglesby </title>    
-      <script src="https://cdn.tailwindcss.com"></script>
-    </head>
-    <body>
-        <h1>Miriam Oglesby</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miriam Oglesby | Author</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
+    <section class="text-center py-20 px-4">
+      <h1 class="text-5xl font-bold">Miriam Oglesby</h1>
+      <p class="text-lg text-gray-400 mt-4">Poet | Storyteller | Feminist</p>
+    </section>
 
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center p-6">
-      
-      <section className="text-center py-20">
-        <h1 className="text-5xl font-bold">Miriam Oglesby</h1>
-        <p className="text-lg text-gray-400 mt-4">Poet | Storyteller | Feminist</p>
-      </section>
+    <!-- About Section -->
+    <section class="max-w-3xl mx-auto text-center py-12 px-4">
+      <h2 class="text-3xl font-semibold">About Me</h2>
+      <p class="text-gray-300 mt-4">
+        I am a British poet based in Germany, writing about loss, love, and
+        resilience. My debut poetry collection explores the complexities of
+        miscarriage and healing.
+      </p>
+    </section>
 
-    
-      <section className="max-w-3xl text-center py-12">
-        <h2 className="text-3xl font-semibold">About The Authoress</h2>
-        <p className="text-gray-300 mt-4">
-            Miriam Oglesby is a British poet living in Germany, writing at the intersection of loss, resilience, and quiet resistance. Her debut collection emerged from the depths of miscarriage—a deeply personal exploration of grief, love, and the unspoken spaces between.
-
-            A feminist working in tech, Miriam is passionate about language in all its forms: how it empowers, connects, and heals. Miriam writes to honour what is often unspoken, especially in the lives of women. Her work seeks not only to make sense of her own experience, but to help others feel seen, heard, and less isolated in theirs. 
-        </p>
-      </section>
-
-     
-      <section className="max-w-4xl py-12">
-        <h2 className="text-3xl font-semibold text-center">My Work</h2>
-        <div className="mt-6 flex flex-wrap justify-center gap-6">
-          <Card className="w-72 bg-gray-800">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-medium">TBA</h3>
-              <p className="text-gray-400 mt-2">A collection of poems about grief, healing, and hope.</p>
-              <Button className="mt-4 bg-blue-500 hover:bg-blue-600">Get the Book</Button>
-            </CardContent>
-          </Card>
+    <!-- Books Section -->
+    <section class="max-w-4xl mx-auto py-12 px-4">
+      <h2 class="text-3xl font-semibold text-center">My Work</h2>
+      <div class="mt-6 flex flex-wrap justify-center gap-6">
+        <div class="w-72 bg-gray-800 rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-medium">Whispers of Loss</h3>
+          <p class="text-gray-400 mt-2">
+            A collection of poems about grief, healing, and hope.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded"
+            >Get the Book</a
+          >
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section className="py-12 text-center">
-        <h2 className="text-3xl font-semibold">Connect With Me</h2>
-        <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="text-gray-400 hover:text-white"><Mail size={28} /></a>
-          <a href="#" className="text-gray-400 hover:text-white"><Twitter size={28} /></a>
-          <a href="#" className="text-gray-400 hover:text-white"><Instagram size={28} /></a>
-        </div>
-      </section>
-
-      <footer> <a href="/impressum.html">Impressum</a></footer>
-    </div>
-
-
-
-    </body>
+    <!-- Contact Section -->
+    <section class="py-12 text-center px-4">
+      <h2 class="text-3xl font-semibold">Connect With Me</h2>
+      <div class="flex justify-center gap-6 mt-4 text-gray-400 text-2xl">
+        <a href="#" class="hover:text-white" aria-label="Email">&#9993;</a>
+        <a href="#" class="hover:text-white" aria-label="Twitter">&#x1F426;</a>
+        <a href="#" class="hover:text-white" aria-label="Instagram">&#128248;</a>
+      </div>
+    </section>
+  </body>
+  <footer> <a href="/impressum.html">Impressum</a></footer>
 </html>
