@@ -1,42 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Miriam Oglesby | Author</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-      </head>
-    <body>
-        <h1>Miriam Oglesby</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miriam Oglesby | Author</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6">
 
-    <div className="min-h-screen bg-gray-900 text-white flex flex-col items-center p-6">
-      
-      <section className="text-center py-20">
-        <h1 className="text-5xl font-bold">Impressum</h1>
-   
-      </section>
-     
-      <section className="max-w-4xl py-12">
-        <h2 className="text-3xl font-semibold text-center">My Work</h2>
-        <div className="mt-6 flex flex-wrap justify-center gap-6">
-          <Card className="w-72 bg-gray-800">
-            <CardContent className="p-6">
-              <h3 className="text-xl font-medium">TBA</h3>
-              <p className="text-gray-400 mt-2">A collection of poems about grief, healing, and hope.</p>
-              <Button className="mt-4 bg-blue-500 hover:bg-blue-600">Get the Book</Button>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+    <section class="text-center py-20">
+      <h1 class="text-5xl font-bold">Impressum</h1>
+    </section>
 
-      <section className="py-12 text-center">
-        <h2 className="text-3xl font-semibold">Connect With Me</h2>
-        <div className="flex justify-center gap-6 mt-4">
-          <a href="#" className="text-gray-400 hover:text-white"><Mail size={28} /></a>
-          <a href="#" className="text-gray-400 hover:text-white"><Twitter size={28} /></a>
-          <a href="#" className="text-gray-400 hover:text-white"><Instagram size={28} /></a>
+    <section class="max-w-4xl py-12 text-center">
+      <h2 class="text-3xl font-semibold">My Work</h2>
+      <div class="mt-6 flex flex-wrap justify-center gap-6">
+        <div class="w-72 bg-gray-800 rounded-xl shadow-md p-6">
+          <h3 class="text-xl font-medium">TBA</h3>
+          <p class="text-gray-400 mt-2">
+            A collection of poems about grief, healing, and hope.
+          </p>
+          <a
+            href="#"
+            class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded"
+            >Get the Book</a
+          >
         </div>
-      </section>
-    </div>
-    </body>
+      </div>
+    </section>
+
+    <section class="py-12 text-center">
+      <h2 class="text-3xl font-semibold">Connect With Me</h2>
+      <div class="flex justify-center gap-6 mt-4 text-2xl text-gray-400">
+        <a href="#" class="hover:text-white" aria-label="Email">📧</a>
+        <a href="#" class="hover:text-white" aria-label="Twitter">🐦</a>
+        <a href="#" class="hover:text-white" aria-label="Instagram">📸</a>
+      </div>
+    </section>
+  </body>
 </html>
