@@ -3,22 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Miriam Oglesby | Author</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-      <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Impressum | Miriam Oglesby</title>
+    <title>Miriam Oglesby | Authoress</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Mailchimp Form CSS -->
+    <!-- Mailchimp CSS -->
     <link
       href="https://cdn-images.mailchimp.com/embedcode/classic-061523.css"
       rel="stylesheet"
       type="text/css"
     />
     <style>
-      /* Override Mailchimp default background for seamless styling */
       #mc_embed_signup {
         background: #1f2937; /* Tailwind's gray-800 */
         color: white;
@@ -36,30 +30,19 @@
       }
     </style>
   </head>
-  </head>
-  <body class="bg-gray-900 text-white">
-    <!-- Hero Section -->
-    <section class="text-center py-20 px-4">
+  <body class="bg-gray-900 text-white min-h-screen flex flex-col items-center p-6">
+    <!-- Page Header -->
+    <header class="text-center py-12">
       <h1 class="text-5xl font-bold">Miriam Oglesby</h1>
-      <p class="text-lg text-gray-400 mt-4">Poet | Storyteller | Feminist</p>
-    </section>
+      <p class="mt-2 text-gray-300">Poet | Author | Storyteller</p>
+    </header>
 
-    <!-- About Section -->
-    <section class="max-w-3xl mx-auto text-center py-12 px-4">
-      <h2 class="text-3xl font-semibold">About Me</h2>
-      <p class="text-gray-300 mt-4">
-        I am a British poet based in Germany, writing about loss, love, and
-        resilience. My debut poetry collection explores the complexities of
-        miscarriage and healing.
-      </p>
-    </section>
-
-    <!-- Books Section -->
-    <section class="max-w-4xl mx-auto py-12 px-4">
-      <h2 class="text-3xl font-semibold text-center">My Work</h2>
+    <!-- Featured Work -->
+    <section class="max-w-4xl py-12 text-center">
+      <h2 class="text-3xl font-semibold">Featured Work</h2>
       <div class="mt-6 flex flex-wrap justify-center gap-6">
         <div class="w-72 bg-gray-800 rounded-xl shadow-md p-6">
-          <h3 class="text-xl font-medium">Title TBA</h3>
+          <h3 class="text-xl font-medium">TBA</h3>
           <p class="text-gray-400 mt-2">
             A collection of poems about grief, healing, and hope.
           </p>
@@ -72,17 +55,134 @@
       </div>
     </section>
 
-    
-
-    <!-- Contact Section -->
-    <section class="py-12 text-center px-4">
-      <h2 class="text-3xl font-semibold">Connect With Me</h2>
-      <div class="flex justify-center gap-6 mt-4 text-gray-400 text-2xl">
-        <a href="#" class="hover:text-white" aria-label="Email">&#9993;</a>
-        <a href="#" class="hover:text-white" aria-label="Twitter">&#x1F426;</a>
-        <a href="#" class="hover:text-white" aria-label="Instagram">&#128248;</a>
+    <!-- Mailchimp Newsletter Signup -->
+    <section id="mc_embed_shell" class="w-full px-4">
+      <div id="mc_embed_signup">
+        <form
+          action="https://gmail.us19.list-manage.com/subscribe/post?u=983f62c91536809930ed4828f&amp;id=e0af9fb66d&amp;f_id=005f95e4f0"
+          method="post"
+          id="mc-embedded-subscribe-form"
+          name="mc-embedded-subscribe-form"
+          class="validate"
+          target="_blank"
+          novalidate
+        >
+          <div id="mc_embed_signup_scroll">
+            <h2 class="text-2xl text-white font-bold mb-4">
+              I want to hear the latest news!
+            </h2>
+            <div class="indicates-required text-sm text-gray-300 mb-2">
+              <span class="asterisk">*</span> indicates required
+            </div>
+            <div class="mc-field-group mb-4">
+              <label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label>
+              <input
+                type="email"
+                name="EMAIL"
+                class="required email w-full p-2 border rounded"
+                id="mce-EMAIL"
+                required
+              />
+            </div>
+            <div class="mc-field-group mb-4">
+              <label for="mce-FNAME">First Name</label>
+              <input
+                type="text"
+                name="FNAME"
+                class="w-full p-2 border rounded"
+                id="mce-FNAME"
+              />
+            </div>
+            <div id="mce-responses" class="clear foot">
+              <div class="response" id="mce-error-response" style="display: none"></div>
+              <div class="response" id="mce-success-response" style="display: none"></div>
+            </div>
+            <div style="position: absolute; left: -5000px" aria-hidden="true">
+              <input
+                type="text"
+                name="b_983f62c91536809930ed4828f_e0af9fb66d"
+                tabindex="-1"
+                value=""
+              />
+            </div>
+            <div class="clear foot mt-4">
+              <input
+                type="submit"
+                name="subscribe"
+                id="mc-embedded-subscribe"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded"
+                value="Subscribe"
+              />
+              <p class="text-xs mt-2">
+                <a
+                  href="http://eepurl.com/jcwTCk"
+                  title="Mailchimp - email marketing made easy and fun"
+                  class="text-gray-400 hover:text-white"
+                  >Powered by Mailchimp</a
+                >
+              </p>
+            </div>
+          </div>
+        </form>
       </div>
     </section>
+
+    <!-- Social Links -->
+   <!-- Load Lucide Icons -->
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<!-- Social Links -->
+<section class="py-12 text-center">
+  <h2 class="text-3xl font-semibold">Connect With Me</h2>
+  <div class="flex justify-center gap-6 mt-6">
+    <!-- Email -->
+    <a href="hello@miriamoglesby.com" class="text-gray-400 hover:text-white" aria-label="Email">
+      <i data-lucide="mail" class="w-6 h-6"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/miriam.oglesby" target="_blank" class="text-gray-400 hover:text-white" aria-label="Instagram">
+      <i data-lucide="instagram" class="w-6 h-6"></i>
+    </a>
+  </div>
+</section>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/miriamoglesby/" target="_blank" class="text-gray-400 hover:text-white" aria-label="LinkedIn">
+      <i data-lucide="linkedin" class="w-6 h-6"></i>
+    </a>
+
+<!-- Initialize Lucide icons -->
+<script>
+  lucide.createIcons();
+</script>
+
+
+    <!-- Mailchimp JS -->
+    <script
+      type="text/javascript"
+      src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+    ></script>
+    <script type="text/javascript">
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+        fnames[6] = 'COMPANY';
+        ftypes[6] = 'text';
+      })(jQuery);
+      var $mcj = jQuery.noConflict(true);
+    </script>
   </body>
-  <footer> <a href="/impressum.html">Impressum</a></footer>
 </html>
